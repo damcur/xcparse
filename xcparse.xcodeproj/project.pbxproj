@@ -59,6 +59,12 @@
 		622E4E922347F0890032DC5A /* TypeDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E4E912347F0890032DC5A /* TypeDefinition.swift */; };
 		622E4E942347F0AA0032DC5A /* ActionAbstractTestSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E4E932347F0AA0032DC5A /* ActionAbstractTestSummary.swift */; };
 		622E4E962347F0D30032DC5A /* ObjectID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E4E952347F0D30032DC5A /* ObjectID.swift */; };
+		62A842D9234EF19D00DEA7FF /* ActivityLogAnalyzerControlFlowStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842D8234EF19C00DEA7FF /* ActivityLogAnalyzerControlFlowStep.swift */; };
+		62A842DB234EF1B600DEA7FF /* ActivityLogAnalyzerControlFlowStepEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842DA234EF1B600DEA7FF /* ActivityLogAnalyzerControlFlowStepEdge.swift */; };
+		62A842DD234EF1CF00DEA7FF /* ActivityLogAnalyzerEventStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842DC234EF1CF00DEA7FF /* ActivityLogAnalyzerEventStep.swift */; };
+		62A842DF234EF1E600DEA7FF /* ActivityLogAnalyzerResultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842DE234EF1E600DEA7FF /* ActivityLogAnalyzerResultMessage.swift */; };
+		62A842E1234EF1FB00DEA7FF /* ActivityLogAnalyzerStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842E0234EF1FB00DEA7FF /* ActivityLogAnalyzerStep.swift */; };
+		62A842E3234EF21100DEA7FF /* ActivityLogAnalyzerWarningMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A842E2234EF21100DEA7FF /* ActivityLogAnalyzerWarningMessage.swift */; };
 		OBJ_34 /* XCPResultDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* XCPResultDecoding.swift */; };
 		OBJ_42 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Console.swift */; };
 		OBJ_43 /* XCPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCPParser.swift */; };
@@ -141,6 +147,12 @@
 		622E4E912347F0890032DC5A /* TypeDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDefinition.swift; sourceTree = "<group>"; };
 		622E4E932347F0AA0032DC5A /* ActionAbstractTestSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionAbstractTestSummary.swift; sourceTree = "<group>"; };
 		622E4E952347F0D30032DC5A /* ObjectID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectID.swift; sourceTree = "<group>"; };
+		62A842D8234EF19C00DEA7FF /* ActivityLogAnalyzerControlFlowStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerControlFlowStep.swift; sourceTree = "<group>"; };
+		62A842DA234EF1B600DEA7FF /* ActivityLogAnalyzerControlFlowStepEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerControlFlowStepEdge.swift; sourceTree = "<group>"; };
+		62A842DC234EF1CF00DEA7FF /* ActivityLogAnalyzerEventStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerEventStep.swift; sourceTree = "<group>"; };
+		62A842DE234EF1E600DEA7FF /* ActivityLogAnalyzerResultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerResultMessage.swift; sourceTree = "<group>"; };
+		62A842E0234EF1FB00DEA7FF /* ActivityLogAnalyzerStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerStep.swift; sourceTree = "<group>"; };
+		62A842E2234EF21100DEA7FF /* ActivityLogAnalyzerWarningMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogAnalyzerWarningMessage.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCPParser.swift; sourceTree = "<group>"; };
 		OBJ_14 /* XCResultToolCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCResultToolCommand.swift; sourceTree = "<group>"; };
@@ -226,7 +238,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -239,7 +251,6 @@
 				OBJ_27 /* Makefile */,
 				OBJ_28 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -274,6 +285,12 @@
 				622E4E792347EF810032DC5A /* ActionTestableSummary.swift */,
 				622E4E7B2347EF940032DC5A /* ActionsInvocationMetadata.swift */,
 				622E4E7D2347EFA70032DC5A /* ActionsInvocationRecord.swift */,
+				62A842D8234EF19C00DEA7FF /* ActivityLogAnalyzerControlFlowStep.swift */,
+				62A842DA234EF1B600DEA7FF /* ActivityLogAnalyzerControlFlowStepEdge.swift */,
+				62A842DC234EF1CF00DEA7FF /* ActivityLogAnalyzerEventStep.swift */,
+				62A842DE234EF1E600DEA7FF /* ActivityLogAnalyzerResultMessage.swift */,
+				62A842E0234EF1FB00DEA7FF /* ActivityLogAnalyzerStep.swift */,
+				62A842E2234EF21100DEA7FF /* ActivityLogAnalyzerWarningMessage.swift */,
 				622E4E7F2347EFC20032DC5A /* ActivityLogCommandInvocationSection.swift */,
 				622E4E812347EFD30032DC5A /* ActivityLogMajorSection.swift */,
 				622E4E832347EFE60032DC5A /* ActivityLogMessage.swift */,
@@ -382,7 +399,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,6 +423,7 @@
 				622E4E8E2347F04F0032DC5A /* ArchiveInfo.swift in Sources */,
 				622E4E782347EF640032DC5A /* ActionTestSummaryIdentifiableObject.swift in Sources */,
 				622E4E6E2347EEE80032DC5A /* ActionTestPerformanceMetricSummary.swift in Sources */,
+				62A842D9234EF19D00DEA7FF /* ActivityLogAnalyzerControlFlowStep.swift in Sources */,
 				622E4E942347F0AA0032DC5A /* ActionAbstractTestSummary.swift in Sources */,
 				622E4E5E2347EA2F0032DC5A /* EntityIdentifier.swift in Sources */,
 				622E4E582347E9B90032DC5A /* ResultIssueSummaries.swift in Sources */,
@@ -415,17 +433,22 @@
 				622E4E502347E8610032DC5A /* ActionRecord.swift in Sources */,
 				622E4E882347F0130032DC5A /* ActivityLogSection.swift in Sources */,
 				622E4E742347EF290032DC5A /* ActionTestSummary.swift in Sources */,
+				62A842DB234EF1B600DEA7FF /* ActivityLogAnalyzerControlFlowStepEdge.swift in Sources */,
 				622E4E622347ED7E0032DC5A /* ActionRunDestinationRecord.swift in Sources */,
 				622E4E7E2347EFA70032DC5A /* ActionsInvocationRecord.swift in Sources */,
 				622E4E8C2347F03A0032DC5A /* ActivityLogUnitTestSection.swift in Sources */,
 				OBJ_34 /* XCPResultDecoding.swift in Sources */,
 				622E4E5A2347E9D00032DC5A /* Reference.swift in Sources */,
+				62A842E3234EF21100DEA7FF /* ActivityLogAnalyzerWarningMessage.swift in Sources */,
 				622E4E5C2347EA0F0032DC5A /* IssueSummary.swift in Sources */,
 				622E4E642347ED9D0032DC5A /* ActionSDKRecord.swift in Sources */,
 				622E4E842347EFE60032DC5A /* ActivityLogMessage.swift in Sources */,
+				62A842DD234EF1CF00DEA7FF /* ActivityLogAnalyzerEventStep.swift in Sources */,
+				62A842DF234EF1E600DEA7FF /* ActivityLogAnalyzerResultMessage.swift in Sources */,
 				622E4E6A2347EE100032DC5A /* ActionTestFailureSummary.swift in Sources */,
 				622E4E602347EA680032DC5A /* CodeCoverageInfo.swift in Sources */,
 				622E4E7A2347EF810032DC5A /* ActionTestableSummary.swift in Sources */,
+				62A842E1234EF1FB00DEA7FF /* ActivityLogAnalyzerStep.swift in Sources */,
 				622E4E6C2347EE490032DC5A /* ActionTestMetadata.swift in Sources */,
 				622E4E762347EF500032DC5A /* ActionTestSummaryGroup.swift in Sources */,
 				622E4E562347E9950032DC5A /* ResultMetrics.swift in Sources */,
